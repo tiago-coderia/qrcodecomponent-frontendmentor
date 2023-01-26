@@ -30,7 +30,7 @@
 
 body {
     font-family: var(--default-font);
-    background: var(--white);
+    background-color: var(--light-gray);
     @include flex-center();
     width: 100vw;
     height: 100vh;
@@ -39,10 +39,6 @@ body {
 
 .container {
     @include flex-center();
-    width: 1300px;
-    height: 725px;
-    background-color: var(--light-gray);
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2)
 }
 
 .box {
@@ -73,15 +69,5 @@ body {
         color: var(--grayish-blue);
         padding: 0 20px;
         margin-bottom: 45px;
-    }
-}
-
-@media (max-width: 375px) {
-    body {
-        background: var(--light-gray);
-    }
-
-    .container {
-        box-shadow: none;
     }
 }
